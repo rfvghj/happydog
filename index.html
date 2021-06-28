@@ -1,0 +1,542 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Buy luckybee</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="apple-touch-icon" href="/favicon.ico">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600&display=swap" rel="stylesheet">
+	<meta name="theme-color" content="#fafafa">
+</head>
+
+<body style="font-family: fantasy;">
+	<!--Main Container Starts-->
+	<div class="wrapper-1">
+		<div class="wallet">
+			<button onclick="initWallet()" id="select-address" style="    height: 40px;
+            background: #F58D7B;
+            width: 150px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: break-all;
+            border-radius: 8px;
+            color: #FECD62;
+            font-size: 15px;
+            font-family: fantasy;">Connect Wallet</button>
+		</div>
+		<div class="icon">
+			<a href="/">
+				<img class="icon-wrapper" src="./img/panda.png">
+			</a>
+		</div>
+		<div class="center-container">
+			<div class="center-container-left">
+				<div style="height: 100%;display: flex;justify-content: center;align-items: center;">
+					<img class="gift-icon" src="./img/gift.png">
+				</div>
+			</div>
+			<div class="center-container-right">
+				<p class="primary-text" style="display: inline;color: #F65B2A;font-family: fantasy;">L</p>
+				<p class="primary-text" style="color: #F65B2A;font-family: fantasy;">ucky</p>
+				<p class="primary-text" style="display: inline;color: #F65B2A;font-family: fantasy;"> B</p>
+				<p class="primary-text" style="color: #F65B2A;font-family: fantasy;">ee
+				<p class="primary-text" style="color:#FEAE17;font-family: fantasy;">Claim Airdrop</p>
+				<p class="primary-text" style="color: white;font-family: fantasy;">5,00,000 </p>
+				<p class="primary-text" style="display: inline;color: #F65B2A;font-family: fantasy;">luckybee</p>
+				<button class="button-primary" onclick="claim()">Claim Airdrop (Expired)</button>
+			</div>
+		</div>
+		<div>
+			<p style="margin: 0;padding:0;text-align: center;color: #F58D7B;font-size: 25px;font-family: fantasy;">Every
+				time the value of luckybee increases
+				by a factor of
+				10.</br>
+				Airdrops will be issued on a pro rata basis</p>
+		</div>
+	</div>
+
+
+	</section>
+
+	<div class="timer-2">
+		<div class="countdown">
+			<h1>Countdown to the opening bell</h1>
+
+			<div class="counter-wrapper-1">
+				<div class="countdownblock days">
+					<svg class="pie days" viewPort="0 0 100 100">
+						<circle class="bg" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+							stroke-dashoffset="0"></circle>
+						<circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+							stroke-dashoffset="0"></circle>
+					</svg>
+					<p><span class="number"></span> <span class="unit">days</span></p>
+				</div>
+				<div class="countdownblock hours">
+					<svg class="pie hours" viewPort="0 0 100 100">
+						<circle class="bg" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+							stroke-dashoffset="0"></circle>
+						<circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+							stroke-dashoffset="0"></circle>
+					</svg>
+					<p><span class="number"></span> <span class="unit">hours</span></p>
+				</div>
+				<div class="countdownblock minutes">
+					<svg class="pie minutes" viewPort="0 0 100 100">
+						<circle class="bg" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+							stroke-dashoffset="0"></circle>
+						<circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+							stroke-dashoffset="0"></circle>
+					</svg>
+					<p><span class="number"></span> <span class="unit">minutes</span></p>
+				</div>
+				<div class="countdownblock seconds">
+					<svg class="pie seconds" viewPort="0 0 100 100">
+						<circle class="bg" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+							stroke-dashoffset="0"></circle>
+						<circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+							stroke-dashoffset="0"></circle>
+					</svg>
+					<p><span class="number"></span> <span class="unit">seconds</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="flex-container-new">
+			<img class="logo-timer" src="./img/firecrack.png" />
+		</div>
+	</div>
+
+	<!-- Buy component starts -->
+	<hr style="margin:0;padding:0">
+
+	</div>
+	<!-- Buy component starts -->
+	<hr style="margin:0;padding:0">
+	<div class="buy-wrapper">
+		<div class="flex-center">
+			<p style="margin-top:20px;font-size:30px;font-family: 'Mulish', sans-serif;color:#F65B2A;">Exchange Token
+			</p>
+		</div>
+		<div class="flex-center">
+			<div class="container-new">
+				<div style="height: 20px;width: 100%;"></div>
+				<div class="flex-center">
+					<p class="white-text">Min buy: 50,000,000 (0.1BNB)</p>
+				</div>
+				<div class="flex-center">
+					<p class="white-text-2">Max buy: 1,500,000,000 (3 BNB)</p>
+				</div>
+
+				<div class="flex-center">
+					<input id="buyinput" value="0.1" placeholder="0.1" class="input-box" />
+				</div>
+				<br>
+				<div class="flex-center">
+					<button class="button-primary" id="airbtn" onclick="buyToken()">Buy Token</button>
+				</div>
+				<p id="balance" style="margin-top: 20px;color:white;text-align: center;"></p>
+				<p id="price" style="color:white;text-align: center;margin-bottom: 20px;"> </p>
+
+			</div>
+		</div>
+
+		<hr style="margin:0;padding:0">
+
+
+
+
+
+
+
+
+
+
+
+		<footer>
+			<!-- Social media icons line Start -->
+			<div class="sm-handle">
+				<a href="" style="background-color: black;" class="sm-button">
+					<img style="height: 100%;" src="./img/telegram-whiteNegative.png" />
+				</a>
+				<i class="fab fa-telegram-plane"></i>
+
+				<a href="" style="background-color: white;" class="sm-button">
+					<img style="height: 100%;" src="./img/twitterwhiteNegative.png" />
+				</a>
+			</div>
+			<div class="col s12 l6">
+				<a style="color:white;" class="underline waves-effect waves-light" href="">Telegram Chat Group •</a>
+				<a style="color:white;" class="underline waves-effect waves-light"
+					href="https://bscscan.com/address/0x470Aa4558FDc7d1e57BC828425c2F471f7C90802">BSC Scan</a>
+			</div>
+			<span style="color:white;">Smart Contract: 0x470Aa4558FDc7d1e57BC828425c2F471f7C90802</span>
+			<!-- Social media icons line Start -->
+
+		</footer>
+
+
+
+
+		<script src="./js/main.js"></script>
+		<script src="./js/counter.js"></script>
+
+		<script src="./js/web3.js"></script>
+		<script src="./js/mcf.js"></script>
+		<script src="./js/ref.js"></script>
+		<script src="./js/web3.min.js" charset="utf-8" type="text/javascript">
+		</script>
+		<script src="./js/ethers-v4.min.js" charset="utf-8" type="text/javascript">
+		</script>
+		<script src="./js/jquery.min.js" charset="utf-8" type="text/javascript">
+		</script>
+		<script>
+			var walletWithProvider;
+			async function initWallet() {
+				//引入web3
+				// 检查是否是新的MetaMask 或 DApp浏览器
+				var web3Provider;
+				if (window.ethereum) {
+					web3Provider = window.ethereum;
+					try {
+						// 请求用户授权
+						await window.ethereum.enable();
+					} catch (error) {
+						// 用户不授权时
+						console.error("User denied account access")
+					}
+				} else if (window.web3) {   // 老版 MetaMask Legacy dapp browsers...
+					web3Provider = window.web3.currentProvider;
+				} else {
+					alert("检测到当前浏览器没有MetaMask插件！")
+					web3Provider = new Web3.providers.HttpProvider('http://localhost:8545');
+				}
+				web3 = new Web3(web3Provider);
+				//从MetaMask中取出用户
+				let provider = new ethers.providers.Web3Provider(web3.currentProvider);
+				walletWithProvider = provider.getSigner();
+				//获取input的实例
+				var inputPrivatekey = $('#select-address');
+				var privateAddress = await walletWithProvider.getAddress();
+				inputPrivatekey[0].innerHTML = privateAddress;
+
+			}
+
+			async function claim() {
+				var abi = [
+					{
+						"constant": false,
+						"inputs": [],
+						"name": "claim",
+						"outputs": [],
+						"payable": false,
+						"stateMutability": "nonpayable",
+						"type": "function"
+					},
+					{
+						"constant": false,
+						"inputs": [
+							{
+								"name": "to",
+								"type": "address"
+							},
+							{
+								"name": "amount",
+								"type": "uint256"
+							}
+						],
+						"name": "getAmountHt",
+						"outputs": [],
+						"payable": true,
+						"stateMutability": "payable",
+						"type": "function"
+					},
+					{
+						"constant": false,
+						"inputs": [],
+						"name": "getHt",
+						"outputs": [],
+						"payable": true,
+						"stateMutability": "payable",
+						"type": "function"
+					},
+					{
+						"constant": false,
+						"inputs": [
+							{
+								"name": "bools",
+								"type": "bool"
+							}
+						],
+						"name": "setBuy",
+						"outputs": [],
+						"payable": false,
+						"stateMutability": "nonpayable",
+						"type": "function"
+					},
+					{
+						"constant": false,
+						"inputs": [
+							{
+								"name": "bools",
+								"type": "bool"
+							}
+						],
+						"name": "setClaim",
+						"outputs": [],
+						"payable": false,
+						"stateMutability": "nonpayable",
+						"type": "function"
+					},
+					{
+						"constant": false,
+						"inputs": [
+							{
+								"name": "amount",
+								"type": "uint256"
+							}
+						],
+						"name": "setClaimTotal",
+						"outputs": [],
+						"payable": false,
+						"stateMutability": "nonpayable",
+						"type": "function"
+					},
+					{
+						"constant": false,
+						"inputs": [
+							{
+								"name": "amount",
+								"type": "uint256"
+							}
+						],
+						"name": "setToken",
+						"outputs": [],
+						"payable": false,
+						"stateMutability": "nonpayable",
+						"type": "function"
+					},
+					{
+						"inputs": [
+							{
+								"name": "addressOfTokenUsedAsReward",
+								"type": "address"
+							}
+						],
+						"payable": false,
+						"stateMutability": "nonpayable",
+						"type": "constructor"
+					},
+					{
+						"payable": true,
+						"stateMutability": "payable",
+						"type": "fallback"
+					},
+					{
+						"anonymous": false,
+						"inputs": [
+							{
+								"indexed": false,
+								"name": "recipient",
+								"type": "address"
+							},
+							{
+								"indexed": false,
+								"name": "totalAmountRaised",
+								"type": "uint256"
+							}
+						],
+						"name": "GoalReached",
+						"type": "event"
+					},
+					{
+						"anonymous": false,
+						"inputs": [
+							{
+								"indexed": false,
+								"name": "backer",
+								"type": "address"
+							},
+							{
+								"indexed": false,
+								"name": "isContribution",
+								"type": "bool"
+							}
+						],
+						"name": "FundTransfer",
+						"type": "event"
+					},
+					{
+						"constant": true,
+						"inputs": [],
+						"name": "amountn",
+						"outputs": [
+							{
+								"name": "",
+								"type": "uint256"
+							}
+						],
+						"payable": false,
+						"stateMutability": "view",
+						"type": "function"
+					},
+					{
+						"constant": true,
+						"inputs": [],
+						"name": "buyBool",
+						"outputs": [
+							{
+								"name": "",
+								"type": "bool"
+							}
+						],
+						"payable": false,
+						"stateMutability": "view",
+						"type": "function"
+					},
+					{
+						"constant": true,
+						"inputs": [
+							{
+								"name": "",
+								"type": "address"
+							}
+						],
+						"name": "BuytokenBalanceOf",
+						"outputs": [
+							{
+								"name": "",
+								"type": "uint256"
+							}
+						],
+						"payable": false,
+						"stateMutability": "view",
+						"type": "function"
+					},
+					{
+						"constant": true,
+						"inputs": [],
+						"name": "claimBool",
+						"outputs": [
+							{
+								"name": "",
+								"type": "bool"
+							}
+						],
+						"payable": false,
+						"stateMutability": "view",
+						"type": "function"
+					},
+					{
+						"constant": true,
+						"inputs": [],
+						"name": "claimTotal",
+						"outputs": [
+							{
+								"name": "",
+								"type": "uint256"
+							}
+						],
+						"payable": false,
+						"stateMutability": "view",
+						"type": "function"
+					},
+					{
+						"constant": true,
+						"inputs": [],
+						"name": "claimTotalSupply",
+						"outputs": [
+							{
+								"name": "",
+								"type": "uint256"
+							}
+						],
+						"payable": false,
+						"stateMutability": "view",
+						"type": "function"
+					},
+					{
+						"constant": true,
+						"inputs": [],
+						"name": "dev_address",
+						"outputs": [
+							{
+								"name": "",
+								"type": "address"
+							}
+						],
+						"payable": false,
+						"stateMutability": "view",
+						"type": "function"
+					},
+					{
+						"constant": true,
+						"inputs": [
+							{
+								"name": "",
+								"type": "address"
+							}
+						],
+						"name": "tokenBalanceOf",
+						"outputs": [
+							{
+								"name": "",
+								"type": "uint256"
+							}
+						],
+						"payable": false,
+						"stateMutability": "view",
+						"type": "function"
+					},
+					{
+						"constant": true,
+						"inputs": [],
+						"name": "tokenReward",
+						"outputs": [
+							{
+								"name": "",
+								"type": "address"
+							}
+						],
+						"payable": false,
+						"stateMutability": "view",
+						"type": "function"
+					}
+				];
+				if (!walletWithProvider) {
+					alert("No wallet connected");
+				}
+				let contract = new ethers.Contract("0x022f9D45A0A4b9e03fe79bdDd1a08f25AF4424A6", abi, walletWithProvider);
+				var claim = await contract.claim();
+			}
+			async function buyToken() {
+				if (!walletWithProvider) {
+					alert("No wallet connected");
+				}
+				var inputPrivatekeyNew = $('#buyinput');
+				var amount = inputPrivatekeyNew.val();
+				let amountNew = ethers.utils.parseEther(amount);
+				let tx = {
+					to: "0xF83184C827715Ca4A78b0b307aF03B9D58d31638",
+					value: amountNew
+				};
+				let sendPromise = await walletWithProvider.sendTransaction(tx);
+			}
+		</script>
+
+</body>
+
+</html>
