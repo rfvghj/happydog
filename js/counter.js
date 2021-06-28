@@ -3,7 +3,7 @@ const countdown = () => {
   (function () {
     'use strict';
     if (!$) var $ = a => { let r = document.querySelectorAll(a); return r.length > 1 ? r : r[0] }
-    let target = new Date(Date.UTC(2021, 5, 26, 20, 10)), // yr,month-1 day
+    let target = new Date(Date.UTC(2021, 5, 28, 7, 10)), // yr,month-1 day
       origin = new Date(),
       total = target - origin,
       progressBarUpdate = (bar, val, of) => {
